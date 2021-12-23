@@ -311,8 +311,8 @@ def game():
     ctx.fillStyle = "black"
     # 畫布填入黑色
     ctx.fillRect(0, 0, canvas.width, canvas.height)
-    # snake 為 white 色
-    ctx.fillStyle = "white"
+    # snake 為 yellow 色
+    ctx.fillStyle = "yellow"
     # trail 為數列, 代表 snake 各節 [x,y] 座標
     # trail = [[x0,y0], [x1, y1], [x2, y2]...]
     # gs 為方塊邊長 pixel 數
@@ -340,7 +340,7 @@ def game():
         score += 1
     # 更新計分顯示
     update_score(score)
-    ctx.fillStyle = "purple"
+    ctx.fillStyle = "blue"
     ctx.fillRect(ax*gs, ay*gs, gs-2, gs-2)
   
 def key_push(evt):
