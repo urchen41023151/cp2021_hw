@@ -885,7 +885,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="snake">snake</button></p>
+<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="snake">snake</button><button id="w13">w13</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -981,10 +981,15 @@ rocflag = button2(rocflag_url)
 doc["rocflag"].bind("click", rocflag.do)
 ################################## rocflag end
 ################################## snake start
-snake_url = "https://gist.githubusercontent.com/urchen41023151/0dde69b7a5f1a5f30520be408368d673/raw/4745859703fd8d1e7d43b0a1369de17623b4c59f/autosnake-2"
+snake_url = "https://gist.githubusercontent.com/urchen41023151/28cd44b4cefd15e94cf02b3231f26d06/raw/60074dd3d8e6ee8da72121dae8acf52cb9abee0b/snake"
 snake = button2(snake_url)
 doc["snake"].bind("click", snake.do)
 ################################## snake end
+################################## w13 start
+w13_url = "https://gist.githubusercontent.com/urchen41023151/4f8d2fe6b0816586d7c17ad83db50e0b/raw/3802830dce783885d0461f2fd96590f5fd9a1267/w13"
+w13 = button2(w13_url)
+doc["w13"].bind("click", w13.do)
+################################## w13 end
 </script>
 </p><h1>Game</h1>
 <!-- 導入 brython 程式庫 -->
