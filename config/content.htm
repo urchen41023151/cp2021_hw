@@ -1048,8 +1048,8 @@ def game():
         py = tc
     if py > tc:
         py = 0
-    ctx.fillStyle = "black"
-    # 畫布填入黑色
+    ctx.fillStyle = "red"
+    # 畫布填入紅色
     ctx.fillRect(0, 0, canvas.width, canvas.height)
     # snake 為 white 色
     ctx.fillStyle = "white"
@@ -1155,8 +1155,7 @@ doc.addEventListener("keydown", key_push)
 instructions_btn = doc["instructions-btn"]
 instructions_btn.addEventListener("click", show_instructions)
 browser.timer.set_interval(game, 1000/12)
-</script>
-<h1>Exam</h1>
+</script><h1>Exam</h1>
 <h2>w13</h2>
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
